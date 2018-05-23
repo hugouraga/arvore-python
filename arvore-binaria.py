@@ -16,9 +16,9 @@ class Arvore:
             nodo = No(chave,valor)
             return
         if nodo.valor > valor:
-            nodo.direita  = inserir(nodo.direita,chave,valor)
+            nodo.direita  = self.inserir(nodo.direita,chave,valor)
         if nodo.valor < valor:
-            nodo.esquerda = inserir(nodo.esquerda,chave,valor)
+            nodo.esquerda = self.inserir(nodo.esquerda,chave,valor)
         else:
             nodo.valor = valor
         return nodo
